@@ -109,15 +109,16 @@ h3.frame__title {
 }
 
 video.frame__media {
-  
+   width: calc(var(--index) * var(--side-big));
+   height: calc(var(--index) * var(--side-small));
 }
 
 video.frame__media_left {
-  
+   right: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
 }
 
 video.frame__media_right {
-   
+   left: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
 }
 
 .text-left > * {
